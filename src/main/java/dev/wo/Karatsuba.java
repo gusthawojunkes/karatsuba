@@ -6,7 +6,6 @@ public class Karatsuba {
     public static BigInteger multiply(BigInteger x, BigInteger y) {
         //Procura o maior número em bits
         int biggerNumberInBits = getBiggerNumberInBits(x, y);
-        System.out.println(biggerNumberInBits);
 
         // Caso base: Se o maior número em bits for menor que 2000, podemos multiplicar convencionalmente.
         if (biggerNumberInBits <= 200) {
